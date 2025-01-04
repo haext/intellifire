@@ -4,10 +4,10 @@ from __future__ import annotations
 
 from datetime import timedelta
 
-from intellifire4py import UnifiedFireplace
-from intellifire4py.control import IntelliFireController
-from intellifire4py.model import IntelliFirePollData
-from intellifire4py.read import IntelliFireDataProvider
+from haext_intellifire4py import UnifiedFireplace
+from haext_intellifire4py.control import IntelliFireController
+from haext_intellifire4py.model import IntelliFirePollData
+from haext_intellifire4py.read import IntelliFireDataProvider
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.device_registry import DeviceInfo

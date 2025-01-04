@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import asyncio
 
-from intellifire4py import UnifiedFireplace
-from intellifire4py.cloud_interface import IntelliFireCloudInterface
-from intellifire4py.model import IntelliFireCommonFireplaceData
+from haext_intellifire4py import UnifiedFireplace
+from haext_intellifire4py.cloud_interface import IntelliFireCloudInterface
+from haext_intellifire4py.model import IntelliFireCommonFireplaceData
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import (
