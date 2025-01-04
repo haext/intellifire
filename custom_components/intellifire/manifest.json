@@ -1,6 +1,6 @@
 {
-  "domain": "intellifire",
-  "name": "IntelliFire",
+  "domain": "custom_intellifire",
+  "name": "Custom IntelliFire",
   "codeowners": ["@gdgib", "@jeeftor"],
   "config_flow": true,
   "dhcp": [
@@ -11,5 +11,5 @@
   "documentation": "https://www.home-assistant.io/integrations/intellifire",
   "iot_class": "local_polling",
   "loggers": ["intellifire4py"],
-  "requirements": ["intellifire4py @ git+https://github.com/haext/intellifire4py@master"]
+  "requirements": ["intellifire4py @ git+https://github.com/haext/intellifire4py@G2-1700-Polling"]
 }
