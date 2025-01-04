@@ -1,32 +1,4 @@
 {
-  "config": {
-    "flow_title": "{serial}",
-    "step": {
-      "pick_cloud_device": {
-        "title": "Configure fireplace",
-        "description": "Select fireplace by serial number:"
-      },
-      "cloud_api": {
-        "description": "Authenticate against IntelliFire Cloud",
-        "data_description": {
-          "username": "Your IntelliFire app username",
-          "password": "Your IntelliFire app password"
-        },
-        "data": {
-          "username": "[%key:common::config_flow::data::email%]",
-          "password": "[%key:common::config_flow::data::password%]"
-        }
-      }
-    },
-    "error": {
-      "api_error": "Login failed"
-    },
-    "abort": {
-      "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]",
-      "not_intellifire_device": "Not an IntelliFire device.",
-      "no_available_devices": "All available devices have already been configured."
-    }
-  },
   "entity": {
     "binary_sensor": {
       "flame": {
