@@ -13,8 +13,8 @@
           "password": "Your IntelliFire app password"
         },
         "data": {
-          "username": "[%key:common::config_flow::data::email%]",
-          "password": "[%key:common::config_flow::data::password%]"
+          "username": "Username",
+          "password": "Password"
         }
       }
     },
@@ -22,7 +22,7 @@
       "api_error": "Login failed"
     },
     "abort": {
-      "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]",
+      "reauth_successful": "Authentication expired for {name}",
       "not_intellifire_device": "Not an IntelliFire device.",
       "no_available_devices": "All available devices have already been configured."
     }
