@@ -83,7 +83,7 @@
     },
     "fan": {
       "fan": {
-        "name": "[%key:component::fan::title%]"
+        "name": "Fan"
       }
     },
     "light": {
