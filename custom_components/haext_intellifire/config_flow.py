@@ -7,10 +7,10 @@ from dataclasses import dataclass
 from typing import Any
 
 from aiohttp import ClientConnectionError
-from intellifire4py.cloud_interface import IntelliFireCloudInterface
-from intellifire4py.exceptions import LoginError
-from intellifire4py.local_api import IntelliFireAPILocal
-from intellifire4py.model import IntelliFireCommonFireplaceData
+from haext_intellifire4py.cloud_interface import IntelliFireCloudInterface
+from haext_intellifire4py.exceptions import LoginError
+from haext_intellifire4py.local_api import IntelliFireAPILocal
+from haext_intellifire4py.model import IntelliFireCommonFireplaceData
 import voluptuous as vol
 
 from homeassistant.components.dhcp import DhcpServiceInfo

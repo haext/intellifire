@@ -7,8 +7,8 @@ from dataclasses import dataclass
 import math
 from typing import Any
 
-from intellifire4py.control import IntelliFireController
-from intellifire4py.model import IntelliFirePollData
+from haext_intellifire4py.control import IntelliFireController
+from haext_intellifire4py.model import IntelliFirePollData
 
 from homeassistant.components.fan import (
     FanEntity,

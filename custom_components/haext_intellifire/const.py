@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 
-DOMAIN = "custom_intellifire"
+DOMAIN = "haext_intellifire"
 LOGGER = logging.getLogger(__package__)
 DEFAULT_THERMOSTAT_TEMP = 21
 

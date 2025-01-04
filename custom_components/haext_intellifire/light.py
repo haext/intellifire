@@ -6,8 +6,8 @@ from collections.abc import Awaitable, Callable
 from dataclasses import dataclass
 from typing import Any
 
-from intellifire4py.control import IntelliFireController
-from intellifire4py.model import IntelliFirePollData
+from haext_intellifire4py.control import IntelliFireController
+from haext_intellifire4py.model import IntelliFirePollData
 
 from homeassistant.components.light import (
     ATTR_BRIGHTNESS,
