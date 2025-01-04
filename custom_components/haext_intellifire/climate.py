@@ -89,6 +89,7 @@ class IntellifireClimate(IntellifireEntity, ClimateEntity):
         await self.coordinator.control_api.set_thermostat_c(
             temp_c=self.last_temp,
         )
+        await self.coordinator.async_request_refresh()
 
     @property
     def current_temperature(self) -> float:
@@ -108,14 +109,16 @@ class IntellifireClimate(IntellifireEntity, ClimateEntity):
 
         if hvac_mode == HVACMode.OFF:
             await self.coordinator.control_api.turn_off_thermostat()
-            return
 
-        # hvac_mode == HVACMode.HEAT
-        # 1) Set the desired target temp
-        await self.coordinator.control_api.set_thermostat_c(
-            temp_c=self.last_temp,
-        )
+        else:
+            # hvac_mode == HVACMode.HEAT
+            # 1) Set the desired target temp
+            await self.coordinator.control_api.set_thermostat_c(
+                temp_c=self.last_temp,
+            )
 
-        # 2) Make sure the fireplace is on!
-        if not self.coordinator.read_api.data.is_on:
-            await self.coordinator.control_api.flame_on()
+            # 2) Make sure the fireplace is on!
+            if not self.coordinator.read_api.data.is_on:
+                await self.coordinator.control_api.flame_on()
+
+        await self.coordinator.async_request_refresh()
