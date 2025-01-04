@@ -9,7 +9,7 @@
       }
     },
     "abort": {
-      "reauth_successful": "Authentication expired for {name}",
+      "reauth_successful": "Authentication expired for {name}"
     }
   }
 }
