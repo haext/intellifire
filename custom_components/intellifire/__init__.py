@@ -115,7 +115,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     try:
         fireplace: UnifiedFireplace = (
             await UnifiedFireplace.build_fireplace_from_common(
-                _construct_common_data(entry)
+                common_fireplace=_construct_common_data(entry),
+                polling_enabled=False
             )
         )
         LOGGER.debug("Waiting for Fireplace to Initialize")
