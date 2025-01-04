@@ -1,5 +1,5 @@
 {
-    "name": "Intellifire",
+    "name": "Custom Intellifire",
     "domains": ["sensor","binary_sensor","light","switch","climate","fan","number"],
     "iot_class": ["Local Poll"],
     "render_readme": "True"
