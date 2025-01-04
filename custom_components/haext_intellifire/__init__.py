@@ -138,6 +138,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
     hass.data.setdefault(DOMAIN, {})[entry.entry_id] = data_update_coordinator
 
+    await fireplace.perform_poll()
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
 
     return True
