@@ -51,6 +51,9 @@
       }
     },
     "switch": {
+      "flame": {
+        "default": "mdi:fire"
+      },
       "pilot_light": {
         "default": "mdi:fire-alert"
       }
