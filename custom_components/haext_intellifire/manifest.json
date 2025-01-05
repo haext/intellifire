@@ -11,6 +11,6 @@
   "documentation": "https://www.home-assistant.io/integrations/intellifire",
   "iot_class": "local_polling",
   "loggers": ["haext_intellifire4py"],
-  "requirements": ["haext_intellifire4py @ git+https://github.com/haext/intellifire4py@G2-1700-Polling"],
+  "requirements": ["haext_intellifire4py @ git+https://github.com/haext/intellifire4py@084571bae59f2a6f0f332c8751a4b37d269c09b9"],
   "version": "0.0.1"
 }
